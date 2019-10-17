@@ -1,5 +1,4 @@
-# visual-testing
-Example repo with storyshots-puppeteer
+Example repo for visual testing React apps with storyshots-puppeteer
 
 Install dependencies:
 ```
