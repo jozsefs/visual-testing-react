@@ -1,0 +1,8 @@
+article {
+	padding: 20px;
+}
+
+article.highlighted {
+	background: cadetblue;
+	color: #fff;
+}

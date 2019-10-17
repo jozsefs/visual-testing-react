@@ -1,0 +1,39 @@
+{
+  "name": "visual-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-storybook": "build-storybook -c .storybook -o ./public",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "test": "npm run build-storybook && npm run test:snapshot",
+    "test:snapshot": "jest --config ./test/jest.config.json",
+    "test:snapshot:watch": "npm run test:snapshot -- --watch",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@storybook/addon-storyshots": "^5.2.4",
+    "@storybook/addon-storyshots-puppeteer": "^5.2.4",
+    "@storybook/react": "^5.2.4",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-require-context-hook": "^1.0.0",
+    "classnames": "^2.2.6",
+    "css-loader": "^3.2.0",
+    "jest": "^24.9.0",
+    "puppeteer": "^1.20.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-hot-loader": "^4.12.15",
+    "react-test-renderer": "^16.10.2",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  }
+}

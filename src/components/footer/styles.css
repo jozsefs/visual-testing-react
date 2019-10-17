@@ -1,0 +1,8 @@
+footer button {
+	background: salmon;
+	border: none;
+}
+
+footer span + button {
+	margin-left: 10px;
+}

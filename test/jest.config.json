@@ -1,0 +1,8 @@
+{
+  "moduleNameMapper": {
+    "\\.(css|scss)$": "<rootDir>/styleMock.js"
+  },
+  "testRegex": "((\\.|/*.)(snapshot))\\.js?$",
+  "rootDir": "..",
+  "setupFilesAfterEnv": ["<rootDir>/test/jest.setup.js"]
+}
